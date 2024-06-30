@@ -17,7 +17,7 @@ protoc --go_out=./golang --go_opt=paths=source_relative --go-grpc_out=./golang -
 
 cd golang/${SERVICE_NAME}
 go mod init \
-	github.com/huseyinbabal/microservices-proto/golang/${SERVICE_NAME} || true
+	github.com/tnaucoin/goawaste-proto/golang/${SERVICE_NAME} || true
 go mod tidy
 cd ../../
 
