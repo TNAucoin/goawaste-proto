@@ -29,6 +29,6 @@ jobs:
         run: |
           ls
           chmod +x "${GITHUB_WORKSPACE}/bin/autogen.sh"
-          ./bin/autogen.sh ${{ matrix.service }} ${{ env.RELEASE_VERSION }}
+          ./bin/autogen.sh ${{ matrix.service }} ${{ env.RELEASE_VERSION }} "tnaucoin" "travisdevaucoin@gmail.com"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
